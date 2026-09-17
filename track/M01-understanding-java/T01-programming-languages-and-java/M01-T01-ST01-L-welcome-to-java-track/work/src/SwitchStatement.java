@@ -7,26 +7,11 @@ public class SwitchStatement {
 
 // Write the switch statement
         switch (day) {
-
-            case 1:
-            case 2:
-            case 3:
-            case 4:
-            case 5:
-
+            case 1, 2, 3, 4, 5 ->
                 System.out.println("Learning Day");
-
-                break;
-
-            case 6:
-            case 7:
-
+            case 6, 7 ->
                 System.out.println("Revision Day");
-
-                break;
-
-            default:
-
+            default ->
                 System.out.println("Invalid Day");
         }
     }
