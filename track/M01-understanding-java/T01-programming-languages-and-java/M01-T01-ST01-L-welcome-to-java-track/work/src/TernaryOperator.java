@@ -11,12 +11,7 @@ class TernaryOperator {
         double percentage = (totalMarks / 500.0) * 100;
         boolean validMarks = mark1 >= 0 && mark1 <= 100 && mark2 >= 0 && mark2 <= 100 && mark3 >= 0 && mark3 <= 100 && mark4 >= 0 && mark4 <= 100 && mark5 >= 0 && mark5 <= 100;
 
-        String res = (validMarks)
-                ? percentage >= 75.0 ? "Distinction"
-                        : percentage >= 60.0 ? "First Class"
-                                : percentage >= 40.0 ? "Pass"
-                                        : percentage < 40.0 ? "Fail"
-                                                : "InvalidMarks" : "InvalidMarks";
+        String res = (validMarks) ? (percentage > 80) ? "Distinction" : (percentage > 60) ? "First Class" : (percentage > 40) ? "Pass" : "Fail" : "InvalidMarks";
         System.out.println(res);
     }
 }
