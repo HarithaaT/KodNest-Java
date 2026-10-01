@@ -15,30 +15,30 @@ public class StudentRegistrationObjectSystem {
     @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         Student s1 = new Student();
 
         Student s2 = new Student();
 
-        s1.id = sc.nextInt();
+        s1.id = scanner.nextInt();
 
-        sc.nextLine();
-        s1.name = sc.nextLine();
+        scanner.nextLine();
+        s1.name = scanner.nextLine();
 
-        s1.percentage = sc.nextDouble();
+        s1.percentage = scanner.nextDouble();
 
-        s2.id = sc.nextInt();
+        s2.id = scanner.nextInt();
 
-        sc.nextLine();
+        scanner.nextLine();
 
-        s2.name = sc.nextLine();
+        s2.name = scanner.nextLine();
 
-        s2.percentage = sc.nextDouble();
+        s2.percentage = scanner.nextDouble();
 
-        int regId = sc.nextInt();
+        int regId = scanner.nextInt();
 
-        double newPercentage = sc.nextDouble();
+        double newPercentage = scanner.nextDouble();
 
         if (regId == s1.id) {
 
@@ -65,6 +65,6 @@ public class StudentRegistrationObjectSystem {
 
         System.out.println(s2.id + " - " + s2.name + " " + s2.percentage + "%");
 
-        sc.close();
+        scanner.close();
     }
 }
