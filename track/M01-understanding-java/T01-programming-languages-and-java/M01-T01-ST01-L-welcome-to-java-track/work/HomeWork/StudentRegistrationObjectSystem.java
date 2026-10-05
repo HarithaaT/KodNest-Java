@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-class Student {
+class StudentRegister {
 
     int id;
 
@@ -17,9 +17,9 @@ public class StudentRegistrationObjectSystem {
 
         Scanner scanner = new Scanner(System.in);
 
-        Student s1 = new Student();
+        StudentRegister s1 = new StudentRegister();
 
-        Student s2 = new Student();
+        StudentRegister s2 = new StudentRegister();
 
         s1.id = scanner.nextInt();
 
@@ -42,14 +42,14 @@ public class StudentRegistrationObjectSystem {
 
         if (regId == s1.id) {
 
-            Student selectedStudent = s1;
+            StudentRegister selectedStudent = s1;
 
             selectedStudent.percentage = newPercentage;
 
             System.out.println("Selected Student: " + selectedStudent.name);
         } else if (regId == s2.id) {
 
-            Student selectedStudent = s2;
+            StudentRegister selectedStudent = s2;
 
             selectedStudent.percentage = newPercentage;
 
