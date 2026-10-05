@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-class NumberUtility {
+class ValueToGet {
 
     int getValue(int number) {
 
@@ -19,7 +19,7 @@ public class WithParameterWithReturnValue {
 
         int number = sc.nextInt();
 
-        NumberUtility n = new NumberUtility();
+        ValueToGet n = new ValueToGet();
 
         int res = n.getValue(number);
 
