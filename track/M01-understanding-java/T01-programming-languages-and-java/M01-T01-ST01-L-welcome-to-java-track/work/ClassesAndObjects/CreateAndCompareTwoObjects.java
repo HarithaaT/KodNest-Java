@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-class Student {
+class StudentDetails {
 
     int id;
 
@@ -18,9 +18,9 @@ public class CreateAndCompareTwoObjects {
 
         Scanner sc = new Scanner(System.in);
 
-        Student s1 = new Student();
+        StudentDetails s1 = new StudentDetails();
 
-        Student s2 = new Student();
+        StudentDetails s2 = new StudentDetails();
 
         s1.id = sc.nextInt();
 
