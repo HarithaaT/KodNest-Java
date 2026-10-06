@@ -22,7 +22,7 @@ class Practice {
 
 }
 
-class PracticeMethod {
+public class PracticeMethod {
 
     @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
