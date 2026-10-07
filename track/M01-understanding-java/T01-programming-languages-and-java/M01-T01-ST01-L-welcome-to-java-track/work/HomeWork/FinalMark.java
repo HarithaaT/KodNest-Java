@@ -19,15 +19,16 @@ class Student {
 
 public class FinalMark {
 
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
         Student student = new Student();
 
-        student.mark = scanner.scanner.nextInt();
+        student.mark = scanner.nextInt();
 
-        int bonus = scanner.scanner.nextInt();
+        int bonus = scanner.nextInt();
 
         student.showFinalMark(bonus);
         scanner.close();
